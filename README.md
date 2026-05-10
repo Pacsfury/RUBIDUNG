@@ -21,7 +21,7 @@ When the game starts, the map is shown. Diferent tiles mean different things:
 When the first command is inputted, the map hides, and your only help is your memory.
 
 
-Actual comments are:
+Actual commands are:
 
 
 - **W**: Move up
