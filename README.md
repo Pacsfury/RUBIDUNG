@@ -68,5 +68,6 @@ If the correct sequence is inputted, the game halts and you win, but if you do m
 - **Change**: small optimitzation
 - **Change**: updated code for legibility and conventions
 - **Add**: new tile: "O"
+- **OUT**: stable version 0.1.0:0
 
 
