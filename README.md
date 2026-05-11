@@ -35,26 +35,33 @@ If the correct sequence is inputted, the game halts and you win, but if you do m
 
 ## Updates Log
 
-
-09/05/2026:
-- Add first level
-- Add basic logic
-- Add four commands (w, a, s, d)
-- Add player and reward
+09/05/2026: 
+- **Add**: first level
+- **Add**: basic logic
+- **Add**: four commands (w, a, s, d)
+- **Add**: player and rewards symbols
 
 
 10/05/2026:
-- Make win detections better
-- Make small optimitzations and code unification
-- Now walls kill you!
-- Add level 2
-- Add modularity to the game
-- Start XP implementation
-- Optimize code deeply
-    - Delete redundant class: World
+- **Change**: make win detections better
+- **Change**: make small optimitzations and code unification
+- **Change**: now walls kill you!
+- **Add**: level 2
+- **Add**: modularity to the game
+- **Start**: XP implementation
+- **Change**: optimize code deeply
+    - Delete redundant class `World`
     - Implement manual boundary checking to prevent ArrayIndexOutOfBounds without try-catch
     - Unify Scanner use to be only closed and opened one time
-    - Replaced external clean console with ANSI escape code
+    - Replace external clean console with ANSI escape code
     - Refactorize the core to use object references instead of duplicating data structures.
+
+
+11/05/2026:
+- **Add**: level 3
+- **Change**: make better level running system
+- **Fix**: various bug fixes:
+    - Skipping level 1
+    - Continuing after dying
 
 
