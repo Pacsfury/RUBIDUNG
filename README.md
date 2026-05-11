@@ -16,6 +16,7 @@ When the game starts, the map is shown. Diferent tiles mean different things:
 |**.**       |Free space to walk          |
 |**$**       |The treasure you want!      |
 |**@**       |You!                        |
+|**O**       |A wall, without spikes!     |
 
 
 When the first command is inputted, the map hides, and your only help is your memory.
@@ -66,5 +67,6 @@ If the correct sequence is inputted, the game halts and you win, but if you do m
     - Congratulation message now shown correctly
 - **Change**: small optimitzation
 - **Change**: updated code for legibility and conventions
+- **Add**: new tile: "O"
 
 
