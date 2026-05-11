@@ -51,7 +51,7 @@ If the correct sequence is inputted, the game halts and you win, but if you do m
 - **Start**: XP implementation
 - **Change**: optimize code deeply
     - Delete redundant class `World`
-    - Implement manual boundary checking to prevent ArrayIndexOutOfBounds without try-catch
+    - Implement manual boundary checking to prevent `ArrayIndexOutOfBounds` without try-catch
     - Unify Scanner use to be only closed and opened one time
     - Replace external clean console with ANSI escape code
     - Refactorize the core to use object references instead of duplicating data structures.
@@ -63,5 +63,8 @@ If the correct sequence is inputted, the game halts and you win, but if you do m
 - **Fix**: various bug fixes:
     - Skipping level 1
     - Continuing after dying
+    - Congratulation message now shown correctly
+- **Change**: small optimitzation
+- **Change**: updated code for legibility and conventions
 
 
