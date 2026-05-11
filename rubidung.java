@@ -61,13 +61,23 @@ public class Rubidung {
                     this.map = new char[][] {
                         {'#', '#', '#', '#', '#', '#', '#'},
                         {'#', '.', '.', '.', '#', '$', '#'},
-                        {'#', '#', '.', '#', '#', '#', '#'},
+                        {'#', '#', '.', '#', '#', '.', '#'},
                         {'#', '.', '.', '.', '.', '.', '#'},
                         {'#', '@', '#', '#', '#', '#', '#'},
                         {'#', '#', '#', '#', '#', '#', '#'}
                     };
                     break;
             
+                case 4:
+                    this.map = new char[][] {
+                        {'#', '#', '#', '#', '#', '#', '#', '#'},
+                        {'#', '.', '.', '.', '#', '.', '$', '#'},
+                        {'#', '#', 'O', '#', '#', '.', 'O', '#'},
+                        {'#', '.', '.', '.', '.', '.', '.', '#'},
+                        {'#', '@', '$', '#', '#', '#', '#', '#'},
+                        {'#', '#', '#', '#', '#', '#', '#', '#'}
+                    };
+                    break;
                 default:
                     break;
             }
@@ -94,6 +104,10 @@ public class Rubidung {
                 clearScreen();
             }
 
+            int oldX = player.x;
+            int oldY = player.y;
+
+            
             if (command.equals("w")) {
 
                 System.out.println("Move up");
@@ -124,6 +138,9 @@ public class Rubidung {
             } else if (currentTile == '#') {
                 System.out.println("You hit a wall! Game over.");
                 break;
+            } else if (currentTile == 'O') {
+                player.x = oldX;
+                player.y = oldY;
             }
         }
 
@@ -135,7 +152,7 @@ public class Rubidung {
     }
 
     public static void main(String[] args) {
-        int TOTAL_LEVELS = 3; 
+        int TOTAL_LEVELS = 4; 
         Scanner sc = new Scanner(System.in);
         boolean win = false;
 
