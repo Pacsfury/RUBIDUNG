@@ -56,6 +56,17 @@ public class rubidung {
                         {'#', '#', '#', '#', '#', '#'}
                     };
                     break;
+
+                case 3:
+                    this.map = new char[][] {
+                        {'#', '#', '#', '#', '#', '#', '#'},
+                        {'#', '.', '.', '.', '#', '$', '#'},
+                        {'#', '#', '.', '#', '#', '#', '#'},
+                        {'#', '.', '.', '.', '.', '.', '#'},
+                        {'#', '@', '#', '#', '#', '#', '#'},
+                        {'#', '#', '#', '#', '#', '#', '#'}
+                    };
+                    break;
             
                 default:
                     break;
@@ -64,7 +75,7 @@ public class rubidung {
     }
 
 
-    public static void playLevel(Level level, Scanner scanner) {
+    public static boolean playLevel(Level level, Scanner scanner) {
         boolean win = false;
 
         Level level1 = level;
@@ -127,16 +138,32 @@ public class rubidung {
             
         } 
 
+        return win;
+
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        boolean win = false;
 
 
         Level level_act = new Level(1);
-        playLevel(level_act, sc);
+        win =playLevel(level_act, sc);
 
-        level_act = new Level(2);
-        playLevel(level_act, sc);
+
+
+        for (int k = 2; k < 4; k++) {
+            if (win) {
+                level_act = new Level(k);
+                win =playLevel(level_act, sc);
+            } else {
+                break;
+            }
+        }
+
+        System.out.println("Congratulations! You completed all levels!");
+
+
+        clearScreen();
 
         sc.close();
         
