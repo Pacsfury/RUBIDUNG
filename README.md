@@ -65,6 +65,7 @@ If the correct sequence is inputted, the game halts and you win, but if you do m
     - Skipping level 1
     - Continuing after dying
     - Congratulation message now shown correctly
+    - Level 3 now possible
 - **Change**: small optimitzation
 - **Change**: updated code for legibility and conventions
 - **Add**: new tile: "O"
