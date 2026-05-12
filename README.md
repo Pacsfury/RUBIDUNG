@@ -72,3 +72,7 @@ If the correct sequence is inputted, the game halts and you win, but if you do m
 - **OUT**: stable version 0.1.0:0
 
 
+12/05/2026:
+- **Fix**: level 4
+
+
