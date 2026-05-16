@@ -75,4 +75,7 @@ If the correct sequence is inputted, the game halts and you win, but if you do m
 12/05/2026:
 - **Fix**: level 4
 
+16/5/2026:
+- **OUT**: C++ edition for version stable 0.1.0
+
 
