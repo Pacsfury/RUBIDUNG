@@ -19,7 +19,7 @@ public class Rubidung {
 
         public char getCurrentTile(Level level) {
             if (y < 0 || y >= level.map.length || x < 0 || x >= level.map[0].length) {
-                return '#'; // Treat out-of-bounds as walls
+                return '#'; // Treat out-of-bounds as spiky walls
             }
             
             return level.map[y][x];
