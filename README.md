@@ -33,6 +33,16 @@ Actual commands are:
 
 If the correct sequence is inputted, the game halts and you win, but if you do more turns than maximum, you lose!
 
+## How To Play The Multiplayer Guess The Number? (and future online gamemode)
+When executing the file, it will ask you if you want to play online or offline. To mark online, write an N and press enter.
+
+Then, if you want to be the host (the number guesser), write a 0 when asking for IP.
+
+If you want to be the client, because you or somebody else has already created the room, enter `localhost` or another IP (Server listents to :8080 port). Don't put yourself http:// nor :8080. The code does it iself.
+
+After that, the client puts a random number, and the host keeps trying to guess it.
+
+If you want the backend to be better, I would love to see your contribution [here](https://github.com/Pacsfury/NetworkLib-Backend).
 
 ## Updates Log
 
