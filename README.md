@@ -78,4 +78,6 @@ If the correct sequence is inputted, the game halts and you win, but if you do m
 16/5/2026:
 - **OUT**: C++ edition for version stable 0.1.0
 
+13/7/2026:
+- **ADD**: multiplayer guess the number (future RUBIDUNG online game). The multiplayer is just for texts. You can find the backend source code at [Github](https://github.com/Pacsfury/NetworkLib-Backend). I recommend waiting or contributing to the backend until it's enough mature to be able to work with RUBIDUNG.
 

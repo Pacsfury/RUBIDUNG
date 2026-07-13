@@ -154,6 +154,12 @@ public class Rubidung {
     public static void main(String[] args) {
         int TOTAL_LEVELS = 4; 
         Scanner sc = new Scanner(System.in);
+        System.out.println("Do you want to play the offline mode (Y) or the online mode (N)?");
+        if (sc.nextLine().trim().toLowerCase().equals("n")) {
+            HttpSender.playMultiplayer();
+            return;
+        }
+
         boolean win = false;
 
         Level actualLevel = new Level(1);
